@@ -1,18 +1,10 @@
 {
-  "id": "nodebb-plugin-ns-slugify",
-  "name": "NodeBB Slugify",
-  "description": "Auto transliteration of slugs.",
-  "url": "https://github.com/NicolasSiver/nodebb-plugin-ns-slugify",
+  "id": "nodebb-plugin-fixed-topic-slugify",
+  "name": "NodeBB Fixed Topic Slugify",
+  "description": "NodeBB Fixed Topic Slugify.",
+  "url": "https://github.com/puper/nodebb-plugin-fixed-topic-slugify",
   "library": "./plugin.js",
   "hooks": [
-    {
-      "hook": "filter:category.create",
-      "method": "hooks.filters.categoryCreate"
-    },
-    {
-      "hook": "filter:category.update",
-      "method": "hooks.filters.categoryUpdate"
-    },
     {
       "hook": "filter:topic.create",
       "method": "hooks.filters.topicCreate"
@@ -20,10 +12,6 @@
     {
       "hook": "filter:topic.edit",
       "method": "hooks.filters.topicEdit"
-    },
-    {
-      "hook": "filter:user.create",
-      "method": "hooks.filters.userCreate"
     }
   ]
 }

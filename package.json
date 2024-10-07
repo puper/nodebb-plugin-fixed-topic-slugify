@@ -1,29 +1,28 @@
 {
-  "name": "nodebb-plugin-ns-slugify",
-  "version": "1.1.2",
-  "description": "Auto transliteration of slugs.",
+  "name": "nodebb-plugin-fixed-topic-slugify",
+  "version": "1.0.0",
+  "description": "fixed topic slug.",
   "main": "plugin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NicolasSiver/nodebb-plugin-ns-slugify.git"
+    "url": "git+https://github.com/puper/nodebb-plugin-fixed-topic-slugify.git"
   },
   "keywords": [
     "slugs",
-    "cyrillic"
+    "nodebb"
   ],
-  "author": "Nicolas Siver",
+  "author": "puper",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NicolasSiver/nodebb-plugin-ns-slugify/issues"
+    "url": "https://github.com/puper/nodebb-plugin-fixed-topic-slugify/issues"
   },
-  "homepage": "https://github.com/NicolasSiver/nodebb-plugin-ns-slugify#readme",
+  "homepage": "https://github.com/puper/nodebb-plugin-fixed-topic-slugify",
   "dependencies": {
-    "translitit-cyrillic-russian-to-latin": "^0.1.0"
   },
   "nbbpm": {
-    "compatibility": "^0.8.0 || ^0.9.0 || ^1.x"
+    "compatibility": "*"
   }
 }

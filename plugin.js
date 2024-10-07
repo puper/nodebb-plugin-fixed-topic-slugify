@@ -15,6 +15,7 @@
             topicEdit: function (topicData) {
                 topicData.slug = `${topicData.topic.tid}/topic`;
                 //callback(null, topicData);
+                console.log(1234567);
                 return topicData;
             }
         }

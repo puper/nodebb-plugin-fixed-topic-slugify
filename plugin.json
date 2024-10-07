@@ -7,11 +7,11 @@
   "hooks": [
     {
       "hook": "filter:topic.create",
-      "method": "hooks.filters.topicCreate"
+      "method": "topicCreate"
     },
     {
       "hook": "filter:topic.edit",
-      "method": "hooks.filters.topicEdit"
+      "method": "topicEdit"
     }
   ]
 }

@@ -8,6 +8,7 @@
         filters: {
             topicCreate: function (topicData) {
                 topicData.topic.slug = `${topicData.topic.tid}/topic`;
+                console.log(topicData.topic.slug);
                 //callback(null, topicData);
                 return topicData;
             },
@@ -15,7 +16,7 @@
             topicEdit: function (topicData) {
                 topicData.slug = `${topicData.topic.tid}/topic`;
                 //callback(null, topicData);
-                console.log(1234567);
+                console.log(topicData.topic.slug);
                 return topicData;
             }
         }

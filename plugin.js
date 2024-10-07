@@ -6,14 +6,16 @@
     //NodeBB list of Hooks: https://github.com/NodeBB/NodeBB/wiki/Hooks
     Plugin.hooks = {
         filters: {
-            topicCreate: function (topicData, callback) {
-                topicData.topic.slug = `${topicData.tid}/topic`;
-                callback(null, topicData);
+            topicCreate: function (topicData) {
+                topicData.topic.slug = `${topicData.topic.tid}/topic`;
+                //callback(null, topicData);
+                return topicData;
             },
 
-            topicEdit: function (topicData, callback) {
-                topicData.slug = `${topicData.tid}/topic`;
-                callback(null, topicData);
+            topicEdit: function (topicData) {
+                topicData.slug = `${topicData.topic.tid}/topic`;
+                //callback(null, topicData);
+                return topicData;
             }
         }
     };
